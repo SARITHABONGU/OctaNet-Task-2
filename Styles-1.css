@@ -1,0 +1,105 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #a3cada;
+    color: rgb(130, 125, 125);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+.add-task {
+    margin-top: 20px;
+}
+
+.add-task input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.add-task button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: #1bcabf;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.add-task button:hover {
+    background: #70c1da;
+    color: white;
+}
+
+main .container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list li.completed {
+    color: rgb(139, 131, 131);
+}
+
+#task-list li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #af6bee;
+}
+
+#task-list li button:hover {
+    color: #1f96c5;
+}
+
+.tick-mark {
+    display: none;
+    color: rgb(11, 137, 248);
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.tick-mark.visible {
+    display: inline;
+}
+
+button.hidden {
+    display: none;
+}
